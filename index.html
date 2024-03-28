@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahammad">
+    <meta name="keywords" content="book, bookstore, famous books">
+    <meta name="description" content="Bookstore of all famous books">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Icon image -->
+    <link rel="icon" href="./assets/images/adminPanel/booksSmall.png">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./assets/images/adminPanel/booksSmall.png">
+
+    <title>Bookstore</title>
+</head>
+<body>
+    
+<!-- Creating header -->
+    <header class="header">
+        <nav>
+            <ul>
+                <!-- First li with logo and text -->
+                <li id="first">
+                    <a href="">
+                        <img src="./assets/images/header-footer images/header_logo.png" alt="logo" title="Bookstore">
+                        <div class="header_logo_text">
+                            <p class="header_logo_text_first">
+                                library
+                            </p>
+                            <p class="header_logo_text_second">
+                                book store
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!-- First li with logo and text -->
+                
+                <!-- List with links 
+                It should be in center so i made  its with 50% and it putted automatically-->
+                <li class="second_list" id="links">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./assets/pages/catalogPage.html">Catalog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./assets/pages/aboutSote.html">About Store</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./assets/pages/contactUs.html">Contact Us</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./assets/pages/searchPage.html">Search</a>
+                        </li>
+                    </ul>
+                    <img id="image_nav" src="./assets/images/header-footer images/header_logo.png" alt="">
+                </li>
+                <!-- List with links -->
+
+                <!-- List with logo and join -->
+                <li id="joinUsName">
+                    <img id="join_us" src="./assets/images/header-footer images/header_person_icon.png" alt="join" title="join">
+                    <p id="join_us_p">
+                        Join us
+                    </p>
+                    <div id="hamburger" class="hamburger">
+                        <span class="span_ham"></span>
+                        <span class="span_ham"></span>
+                        <span class="span_ham"></span>
+                    </div>
+                </li>
+                <!-- End of list with logo -->
+            </ul>
+        </nav>
+    </header>
+<!-- Header is done -->
+
+<!-- Join_us section will be absolute for cover all page -->
+<section id="join_us_panel" class="join_us">
+    <div class="exit">
+        <img src="./assets/images/header-footer images/exit_image.png" alt="exit" title="exit">
+    </div>
+    <form>
+        <p class="join_text">
+            Join Us
+        </p>
+        <input type="text" name="fullName" id="fullname" placeholder="Full name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button id="join_button" type="submit">Join</button>
+    </form>
+</section>
+<!-- End of join us -->
+
+<main>
+    
+    <section class="sec_1">
+        <article>
+            <h1>
+                Books from A to Z
+            </h1>
+            <p>
+                In our store you can find a book for every taste. A large assortment. Nice prices. Interesting stories.
+            </p>
+            <button id="go_to_catalog_button">
+                Go to catalog
+            </button>
+        </article>
+        <div class="right_side">
+            <img src="./assets/images/index/section_one_books.png" alt="books" title="books">
+        </div>
+    </section>
+
+    <section class="sec_2">
+        <h2>
+            Catalog
+        </h2>
+        <div class="catalog">
+            
+            
+        </div>
+    </section>
+
+    <section class="sec_3">
+        <h3>
+            About Store
+        </h3>
+        <div>
+            <article>
+                <p>
+                    35
+                </p>
+                <span>
+                    Branches  the country
+                </span>
+            </article>
+
+            <article>
+                <p>
+                    898
+                </p>
+                <span>
+                    Products  catalog
+                </span>
+            </article>
+
+            <article>
+                <p>
+                    8659
+                </p>
+                <span>
+                    Buyers
+                </span>
+            </article>
+
+            <article>
+                <p>
+                    72
+                </p>
+                <span>
+                    Hours delivery to cities       
+                </span>
+            </article>
+        </div>
+    </section>
+
+    <section class="sec_4">
+        <h4>
+            Delivery
+        </h4>
+        <p class="we_work"> 
+            We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, aafter selecting the delivery city. <br>
+            
+        </p>
+        <a href="#" class="more_details">
+            More details
+        </a>
+        
+    </section>
+
+    <section class="sec_5">
+        <h6>
+            Follow us on social media
+        </h6>
+        <div class="contacts">
+            <img src="./assets/images/header-footer images/icons_facebook-fill.png" alt="">
+            <img src="./assets/images/header-footer images/icons_instagram-fill.png" alt="">
+            <img src="./assets/images/header-footer images/twitter.png" alt="">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li id="firstt">
+                <a href="">
+                    <img src="./assets/images/header-footer images/white_books.png" alt="logo" title="Bookstore">
+                    <div class="header_logo_text">
+                        <p class="header_logo_text_first">
+                            library
+                        </p>
+                        <p class="header_logo_text_second">
+                            book store
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Popular
+                </span>
+                <span>Programming</span>
+                <span>Books for children</span>
+                <span>Pschology</span>
+                <span>Business</span>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Cash
+                </span>
+                <span>Delivery</span>
+                <span>Payment</span>
+                <span>About the store</span>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Help
+                </span>
+                <span>Contacts</span>
+                <span>Purchase returns</span>
+                <span>Buyer help</span>
+            </li>
+
+            <li class="requestCall">
+                <p>
+                    (+994) 70 540 56 24
+                </p>
+                <a href="tel:+994705405624" id="requestCallButton">
+                    Request a call
+                </a>
+            </li>
+        </ul>
+
+        
+    </nav>
+
+    
+
+    <small>
+        All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+    </small>
+
+
+    <div class="absolute">
+        <div class="absolute_up">
+            <a href="">
+                <img src="./assets/images/header-footer images/white_books.png" alt="">
+                <div class="absolute_logo_text">
+                    <p class="absolute_logo_text_first">
+                        library
+                    </p>
+                    <p class="absolute_logo_text_second">
+                        book store
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="absolute_middle">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Catalog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Contact us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="absolute_low">
+            <p>
+                Library Bookstore EACamp © 2003-2021
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<section id="chatSection">
+    <button class="open-button">Chat<i class="fas fa-comment "></i></button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="" class="form-container">
+        <h1>Chat <i class="fas fa-comment"></i></h1>
+        <div id="allMessages"></div>
+        <input type="text" placeholder="Type message.." name="msg" required id="messageContent">
+
+        <button type="submit" id="sendMessageToChat" class="btn">Send</button>
+        <button type="button" class="btn cancel">Close</button>
+        </form>
+    </div>
+</section>
+
+<section id="sponsorSection">
+    <span class="sponsorsText">Sponsors</span>
+</section>
+
+<div id="sponsors">
+    <div id="sponsorsList">
+        <ul>
+            <li>
+                <a href="https://www.google.com/">
+                    <img src="./assets/images/index/google.png" alt="">
+                    <span>Google</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.netflix.com/az-ru/">
+                    <img src="./assets/images/index/netflix.png" alt="">
+                    <span>Netflix</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.amazon.com/">
+                    <img src="./assets/images/index/amazon.png" alt="">
+                    <span>Amazon</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <button id="closeButton">Close</button>
+</div>
+
+<script src="./assets/javascripts/sponsor.js"></script>
+<script src="./assets/javascripts/chatBox.js" type="module"></script>
+<script src="./assets/javascripts/joinUs.js" type="module"></script>
+<script src="./assets/javascripts/getUserName.js" type="module"></script>
+<script src="./assets/javascripts/index.js" type="module"></script>
+<script src="../javascripts/blockInspect.js"></script>
+
+
+</body>
+</html>

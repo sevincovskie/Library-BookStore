@@ -1,0 +1,874 @@
+/* Imports for colors and fonts with reset.css */
+@import url(./colors.css);
+@import url(./fonts.css);
+@import url(./reset.css);
+
+/* Actual codes for page */
+body{
+    position: relative;
+}
+main{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--body_background);
+}
+*{
+    scroll-behavior: smooth;
+}
+    /* Admin logo side */
+    section#navigationSide{
+        z-index: 5000;
+        transition: .4s all ease;
+        position: fixed;
+        z-index: 10;
+        background: var(--red_background);
+        padding-top: 75px;
+        height: 100%;
+        min-height: calc(100vh - 75px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 20px;
+    }
+    #closeNavigation{
+        display: none;
+        font-size: 2em;
+        font-weight: 900;
+        position: absolute;
+        right: 20px;
+        top: 75px;
+        color: var(--white_text);
+        cursor: pointer;
+        font-family: "Roboto";
+    }
+
+        #adminLogoLink{
+            width: 100%;
+            padding: 20px;
+            min-height: 85px;
+            height: 85px;
+            max-height: 120px;
+            font-family: 'Montserrat';
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 10px;
+            color: var(--white_text);
+            text-decoration: none;
+        }
+            #adminLogoLink img{
+                width: 50%;
+                max-width: 67px;
+                height: 85px;
+            }
+            #adminLogoTextBlock{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: calc(100% - 100px);
+                height: 80%;
+                min-height: 70px;
+                max-height: 70px;
+                padding: 15px 0;
+            }
+                #adminLogoTextBlock span{
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    width: 100%;
+                }
+                #adminLogoTextBlock span::after{
+                    display: block;
+                    content: " ";
+                    margin-top: 5px;
+                    width: 100%;
+                    height: .5px;
+                    background-color: var(--white_background);
+                }
+                #adminLogoTextBlock p{
+                    font-size: .8em;
+                    padding-left: 5px;
+                }
+                .anchors{
+                    display: flex;
+                    width: 60%;
+                    color: var(--white_text);
+                    text-decoration: none;
+                    font-family: "Montserrat";
+                    height: 50px;
+                    justify-content: flex-start;
+                    column-gap: 10px;
+                    align-items: center;
+                    text-align: center;
+                }
+
+    /* Section with main content */
+
+    section#mainContentForAdmin{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background: var(--red_background);
+        padding-left: 350px;
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+        #loginCard{
+            z-index: 100;
+            padding-top: 100px;
+            display: flex;
+            position: absolute;
+            margin-left: 15%;
+            margin-top: 250px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 35px 55px;
+            align-items: center;
+            width: 80%;
+            max-width: 660px;
+            border: 1px solid var(--gray_background);
+            min-height: 540px;
+            background: var(--white_background);
+        }
+            #loginCard h1{
+                font-family: "Montserrat";
+                font-size: 3em;
+                color: var(--black_text);
+                font-weight: 700;
+                height: 30%;
+            }
+            form#adminLoginForm{
+                height: 70%;
+                min-height: 70%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                form#adminLoginForm input{
+                    width: 100%;
+                    height: 75px;
+                    min-height: 75px;
+                    border: 1px solid var(--gray_text);
+                    color: var(--gray_placeholder);
+                    font-weight: 400;
+                    padding: 0 50px;
+                    margin-top: 20px;
+                    font-size: 1em;
+                    transition: .4s all ease;
+                }
+                form#adminLoginForm input:focus{
+                    border: 1px solid var(--orange_background);
+                }
+                #adminLoginButton{
+                    width: 100%;
+                    font-family: "Monsterrat";
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    letter-spacing: .1em;
+                    cursor: pointer;
+                    transition: .4s all ease;
+                    color: var(--white_text);
+                    background: var(--orange_background);
+                    min-height: 75px;
+                    height: 75px;
+                    margin-top: 50px;
+                    margin-bottom: 35px;
+                }
+                #adminLoginButton:hover{
+                    background: var(--white_text);
+                    border: 1px solid var(--orange_background);
+                    color: var(--orange_background);
+                }
+    /* Login side ended */
+
+    #adminMainPanel{
+        position: relative;
+        column-gap: 40px;
+        width: 100%;
+        min-width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: var(--body_background);
+    }
+        #adminLogo{
+            z-index: 2;
+            font-family: "Montserrat";
+            position: absolute;
+            right: 25px;
+            top: 40px;
+            width: 20%;
+            max-width: 75px;
+            margin-right: 100px !important;
+            min-height: 32px;
+            height: 32px;
+            cursor: pointer;
+            padding-left: 16px;
+        }
+        #hamburger{
+            align-self: flex-end !important;
+            position: absolute;
+            display: none !important;
+        }
+        #hamburger img{
+            width: 30px !important;
+        }
+        #adminLogo a{
+            text-decoration: none;
+            font-size: 1em;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            #adminLogo img{
+                width: 25px;
+                padding-bottom: 5px;
+                height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #adminLogo p{
+                color: var(--black_text);
+                text-decoration: none;
+                width: calc(100%-35px);
+                height: 100%;
+                min-height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+/* Admin logo side is done */
+
+
+
+#adminMainPanelElements{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 30px;
+}
+    #addBookSection{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 10px;
+        width: 100%;
+        min-height: 250px;
+        height: 40%;
+    }
+    #addBookSection *{
+        font-family: "Montserrat";
+    }
+        #addBookSection h3{
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--black_text);
+            margin-bottom: 20px;
+        }
+        #addBookSection label{
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        #searchElements{
+            width: 80%;
+            max-width: 470px;
+            height: 45px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 6px;
+        }
+            #searchElements input{
+                width: 80%;
+                transition: .4s all ease;
+                max-width: 395px;
+                height: 100%;
+                border: 2px solid var(--gray_placeholder);
+                border-radius: 25px;
+                padding-left: 33px;
+            }
+            #searchElements input:focus{
+                border: 2px solid var(--orange_background);
+            }
+            #searchElements button{
+                width: 20%;
+                max-width: 63px;
+                border-radius: 30px;
+                background: var(--orange_background);
+                height: 100%;
+                font-size: 1em;
+                color: var(--white_text);
+                cursor: pointer;
+                transition: .4s all ease;
+            }
+            #searchElements button:hover{
+                background: var(--gray_background);
+            }
+                #searchElements button img{
+                    width: 20px;
+                    height: 25px;
+                }
+
+
+
+/* Related search from API */
+#relatedSearches{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: flex-start;
+    row-gap: 8px;
+}
+
+
+/* bookFormSection */
+
+#bookFormSection{
+    height: 100%;
+    min-height: 600px;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+    #mainLabel{
+        width: 100%;
+        font-size: 1.5em;
+        font-family: "Monsterrat";
+        font-weight: 600;
+    }
+
+    .bookFormCard{
+        box-shadow: 0px 0px 5px var(--black_text);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        row-gap: 30px;
+        padding: 20px;
+        background-color: var(--white_background);
+        border-radius: 25px;
+    }
+        .bookFormCard div{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .bookFormCard #descriptionBlock{
+            min-height: 150px;
+            width: 100%;
+        }
+            .bookFormCard div label{
+                width: 100%;
+                height: 30%;
+                font-family: "Roboto";
+                font-size: 1.2em;
+            }
+            .bookFormCard div input,
+            .bookFormCard div textarea,
+            .bookFormCard div select{
+                border-radius: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 60%;
+                box-shadow: 0px 0px 10px var(--gray_background);
+                max-height: 40px;
+                font-size: .9em;
+                color: var(--gray_background);
+            }
+            /* newOrNotDiv */
+            #newOrNotDiv{
+                flex-direction: row;
+                justify-content: flex-start;
+                column-gap: 8px;
+                height: 50px;
+                align-items: center;
+                width: 20%;
+                max-width: 60px;
+                min-width: 50px;
+            }
+            /* Search div */
+#relatedSearches{
+    display: none;
+    row-gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    padding-right: 20px;
+    height: 50%;
+    min-height: 250px;
+    max-height: 300px;
+    overflow-y: scroll;
+    width: 60%;
+    max-width: 450px;
+    background: var(--white_background);
+    border-radius: 15px;
+    scroll-behavior: smooth;
+    scroll-margin-right: 20px;
+    box-shadow: 0px 0px 10px  var(--black_text);
+}
+    #relatedSearches::-webkit-scrollbar{
+        width: 0px;
+    }
+    #relatedSearches div{
+        border: 1px solid var(--orange_background);
+        border-radius: 15px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+    }
+            #newOrNot{
+                width: auto;
+                cursor: pointer;
+                height: auto;
+                background: transparent;
+            }
+            .bookFormCard div select{
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+                font-family: "Monsterrat";
+                font-size: 1em;
+                text-align: center;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                outline: none;
+                border: none;
+            }
+
+            
+            .bookFormCard div textarea{
+              padding-top: 10px;  
+              min-height: 120px;
+              font-size: .9em;
+              height: 50%;
+              max-width: 100%;
+              font-family: "Roboto";
+            }
+        .bookFormCard button{
+            width: 100%;
+            background: var(--orange_background);
+            min-height: 40px;
+            border-radius: 15px;
+            font-family: "Roboto";
+            color: var(--white_text);
+            cursor: pointer;
+            transition: .4s all ease;
+            border: 1px solid var(--orange_background);
+        }
+        .bookFormCard button:hover{
+            background: var(--white_background);
+            color: var(--orange_text);
+        }
+            /* Description */
+/* ----------------------------------------------------------------------------- */
+
+
+/* About store section */
+#aboutStoreSection{
+    height: 400px;
+    margin-top: 100px;
+    min-height: 500px;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+    #aboutStoreSection h4,
+    #aboutUsFromFirebaseSection h4{
+        font-family: "Roboto";
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    #aboutStoreForm{
+        box-shadow: 0px 0px 5px var(--black_text);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        row-gap: 30px;
+        padding: 20px;
+        background-color: var(--white_background);
+        border-radius: 25px;
+    }
+        #aboutStoreForm div{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            #aboutStoreForm div label{
+                width: 100%;
+                height: 30%;
+                font-family: "Roboto";
+                font-size: 1.2em;
+            }
+            #aboutStoreForm div input{
+                border-radius: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 60%;
+                box-shadow: 0px 0px 10px var(--gray_background);
+                max-height: 40px;
+                font-size: .9em;
+                color: var(--gray_background);
+            }
+            #aboutStoreForm div textarea{
+                border-radius: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                box-shadow: 0px 0px 10px var(--gray_background);
+                max-height: 150px;
+                font-size: .9em;
+                color: var(--gray_background);
+                padding-top: 10px;  
+                min-height: 120px;
+                font-size: .9em;
+                height: 60%;
+                max-width: 100%;
+                font-family: "Roboto";
+                margin-top: 16px;
+            }
+        #sendAboutForm{
+            margin-top: 60px;
+            width: 100%;
+            height: 40px;
+            background: var(--orange_background);
+            min-height: 40px;
+            border-radius: 15px;
+            font-family: "Roboto";
+            color: var(--white_text);
+            cursor: pointer;
+            transition: .4s all ease;
+            border: 1px solid var(--orange_background);
+        }
+
+/* Join Us info table */
+
+#joinUsSection, #BooksSection, #contactUsSection, #aboutUsFromFirebaseSection, #onlineUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 20px;
+    margin-top: 50px;
+    min-height: 200px;
+    width: 60%;
+}
+#onlineUsers, #joinUsSection{
+    max-width: 550px !important;
+}
+    #joinUsSection h4,
+    #BooksSection h4,
+    #contactUsSection h4,
+    #onlineUsers h4{
+        font-family: "Roboto";
+        font-size: 1.4em;
+        color: var(--black_text);
+        font-weight: 600;
+    }
+    #joinUsMainTable{
+        font-family: "Roboto";
+        font-size: 1em;
+        color: var(--black_text);
+        font-weight: 300;
+    }
+        tr{
+            background: var(--red_background);
+            font-family: "Nunito";
+            width: 100%;
+            color: var(--black_text);
+            box-shadow: 0px 2px 5px var(--black_text);
+        }
+        th{
+            background: var(--red_background);
+            color: var(--white_text);
+            font-family: "Nunito";
+            font-weight: 600;
+            padding: 10px;
+        }
+        td{
+            background: var(--white_background);
+            padding: 10px;
+            font-size: .8em;
+            font-weight: 600;
+            font-family: "Nunito";
+            text-align: center;
+            letter-spacing: .05em;
+            vertical-align: middle;
+        }
+
+        /* Books Section */
+    #BooksSection,
+    #contactUsSection,
+    #aboutUsFromFirebaseSection,
+    #onlineUsers{
+        max-width: 1100px;
+        width: 80%;
+    }
+    .removable, .removableContact, .removableAbout{
+        cursor: pointer;
+        color: var(--orange_background);
+        font-weight: 900;
+    }
+    .removable img,
+    .removableContact img,
+    .removableAbout img{
+        width: 20px;
+        height: 20px;
+    }
+    #aboutUsPagePhoto{
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+    }
+
+
+
+
+/* Type adding div */
+#typeadding{
+    position: relative;
+}
+    #typeAddingBlock{
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        margin-left: 90px;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 5px;
+    }
+        #typeAddingBlock span{
+            width: 10%;
+            font-size: 1.5em;
+            height: auto;
+            font-family: "Roboto";
+            font-weight: 900;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #typeAddingBlock form{
+            display: none;
+            width: 80%;
+            height: 100%;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            border: 2px solid var(--orange_background);
+            background: var(--white_background);
+        }
+            #newTypeInfo{
+                width: 80%;
+                height: 40%;
+            }
+            #newTypeInfoButton{
+                width: 80%;
+            }
+            /* contactUsSection  */
+
+
+
+    /* Chatbox section */
+
+    #chat{
+        width: 80%;
+        max-width: 850px;
+        margin-bottom: 50px;
+        display: flex;
+        min-height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 30px;
+    }    
+        #chat h4{
+            font-family: "Montserrat";
+            font-weight: 900;
+            font-size: 1.5em;
+            height: 20px;
+        }
+            #chatMain{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                min-height: 300px !important;
+                align-items: flex-start;
+                background: var(--white_background);
+                border-radius: 15px;
+            }
+                #messagesFromUser{
+                    max-height: 300px;
+                    width: 100%;
+                    overflow-y: scroll;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    row-gap: 10px;
+                    align-items: flex-start;
+                    padding: 10px;
+                }   
+                    #messagesFromUser div{
+                        background: var(--body_background);
+                        border-radius: 15px;
+                        padding: 10px;
+                    }
+                #sendMEssagePrompt{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    min-height: 40px !important;
+                }
+                    #messageContext{
+                        background: var(--red_background);
+                        color: var(--white_text);
+                        width: 80%;
+                        border-radius: 15px;
+                        height: 100% !important;
+                        min-height: 40px !important;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    #sendAdminMessage{
+                        border-radius: 15px;
+                        width: 10%;
+                        height: 40px;
+                        color: var(--white_text);
+                        font-family: "Roboto";
+                        background: var(--orange_background);
+                        cursor: pointer;
+                    }
+
+                    #messageModal{
+                        width: 100vw !important;
+                        min-width: 100vw !important;
+                        height: 100vh !important;
+                        min-height: 100vh !important;
+                        z-index: 999999999999;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        border: 2px solid purple;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        background: transparent;
+                    }
+                        #messageModal span{
+                            background: var(--red_background);
+                            color: var(--white_text);
+                            font-size: 2em;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+#contactUsSection,
+#aboutUsFromFirebaseSection,
+#onlineUsers{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px){
+    #mainContentForAdmin{
+        padding-left: 10px !important;
+    }
+    .tableDescription{
+        display: none !important;
+    }
+    #closeNavigation {
+        display: flex;
+    }
+    table{
+        max-width: 100% !important;
+        overflow: hidden !important;
+        width: 100% !important;
+    }
+    td, th{
+        font-size: .8em;
+        max-width: 40px !important;
+        width: auto;
+    }
+    #bookFormSection,
+    #aboutStoreSection,
+    #joinUsSection,
+    #BooksSection,
+    #contactUsSection,
+    #aboutUsFromFirebaseSection{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #adminMainPanelElements{
+        width: 100% !important;
+        padding: 10px;
+    }
+    #aadmin{
+        display: none !important;
+    }
+    #hamburger{
+        display: flex !important;
+    }
+    #adminLogo{
+        margin-right: -10px !important;
+    }
+    #loginCard{
+        width: 90%;
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        margin: 0;
+    }
+    #mainContentForAdmin{
+        padding: 0px !important;
+        width: 100%;
+        max-width: 100vw;
+    }
+}

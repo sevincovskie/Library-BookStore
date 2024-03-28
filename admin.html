@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Moonle-js, sevincovski, narmin">
+    <meta name="keywords" content="books, most popular books, library">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonr awesome link -->
+    <script src="https://kit.fontawesome.com/c6c78699a0.js" crossorigin="anonymous"></script>
+
+    <!-- Icon for admin panel -->
+    <link rel="icon" href="./assets/images/adminPanel/booksSmall.png">
+    <!-- Styles for admin panel -->
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <!-- Script for admin panel -->
+    <script src="./assets/javascripts/adminPanel.js" type="module" defer></script>
+
+    <title>Bookstore Admin</title>
+
+</head>
+<body>
+    <!-- begining of content -->
+    
+    <main id="adminMain">
+
+
+        <!-- Navigation side for admin -->
+        <section style="width: 350px;" id="navigationSide">
+
+            
+
+            <a href="#" id="adminLogoLink">
+                <img 
+                src="./assets/images/adminPanel/bookstoreLogo.png" 
+                alt="loginToMain"
+                title="loginToMain"
+                id="loginToMain"
+                >
+                <div id="adminLogoTextBlock">
+                    <span>
+                        library
+                    </span>
+                    <p>
+                        Admin Panel
+                    </p>
+                </div>
+            </a>
+
+            
+
+
+        </section>
+
+        <!-- Right side for admin -->
+        <section id="mainContentForAdmin">
+            <div id="loginCard">
+                <h1>
+                    Welcome Admin
+                </h1>
+                <form id="adminLoginForm">
+
+                    <input 
+                    type="text" 
+                    name="adminUsername" 
+                    id="adminUsername" 
+                    placeholder="Username" 
+                    required>
+
+                    <input 
+                    type="password" 
+                    name="adminPassword" 
+                    id="adminPassword" 
+                    placeholder="Password">
+
+                    <button id="adminLoginButton">
+                        Join
+                    </button>
+                </form>
+            </div>
+
+            
+        </section>
+        
+    </main>
+
+    <section id="messageModal">
+        Salam
+    </section>
+<script src="../javascripts/blockInspect.js"></script>
+
+</body>
+</html>

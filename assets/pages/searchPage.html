@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/searchPage.css">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../images/header-footer images/white_books.png">
+    <title>Search Page</title>
+
+    <script src="../javascripts/searchPage.js" type="module" defer></script>
+
+</head>
+<body>
+
+    <!-- Creating header -->
+    <header class="header">
+        <nav>
+            <ul>
+                <!-- First li with logo and text -->
+                <li id="first">
+                    <a href="">
+                        <img src="../images/header-footer images/header_logo.png" alt="logo" title="Bookstore">
+                        <div class="header_logo_text">
+                            <p class="header_logo_text_first">
+                                library
+                            </p>
+                            <p class="header_logo_text_second">
+                                book store
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!-- First li with logo and text -->
+                
+                <!-- List with links 
+                It should be in center so i made  its with 50% and it putted automatically-->
+                <li class="second_list" id="links">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./catalogPage.html">Catalog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./aboutSote.html">About Store</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./contactUs.html">Contact Us</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./searchPage.html">Search</a>
+                        </li>
+                    </ul>
+                    <img id="image_nav" src="../images/header-footer images/header_logo.png" alt="">
+                </li>
+                <!-- List with links -->
+
+                <!-- List with logo and join -->
+                <li id="joinUsName">
+                    <img id="join_us" src="../images/header-footer images/header_person_icon.png" alt="join" title="join">
+                    <p id="join_us_p">
+                        Join us
+                    </p>
+                    <div id="hamburger" class="hamburger">
+                        <span class="span_ham"></span>
+                        <span class="span_ham"></span>
+                        <span class="span_ham"></span>
+                    </div>
+                </li>
+                <!-- End of list with logo -->
+            </ul>
+        </nav>
+    </header>
+<!-- Header is done -->
+
+<!-- Join_us section will be absolute for cover all page -->
+<section id="join_us_panel" class="join_us">
+    <div class="exit">
+        <img src="../images/header-footer images/exit_image.png" alt="exit" title="exit">
+    </div>
+    <form>
+        <p class="join_text">
+            Join Us
+        </p>
+        <input type="text" name="fullName" id="fullname" placeholder="Full name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button id="join_button" type="submit">Join</button>
+    </form>
+</section>
+<!-- End of join us -->
+
+
+
+
+<main>
+    <section class="sec_1">
+        <div class="leftSide">
+            <h1>
+                Search
+            </h1>
+            <form action="">
+                <input type="text" name="searchBook" placeholder="Search Book..." id="searchBook">
+                <button id="searchBookButton">Search</button>
+            </form>
+        </div> 
+
+        <div class="rightSide">
+            
+            <div id="addedInfo">
+                <p id="titleDetails">Details will be reflected here</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="socMedias">
+        <h6>
+            Follow us on social media
+        </h6>
+        <div class="contacts">
+            <img src="../images/header-footer images/icons_facebook-fill.png" alt="">
+            <img src="../images/header-footer images/icons_instagram-fill.png" alt="">
+            <img src="../images/header-footer images/twitter.png" alt="">
+        </div>
+    </section>
+</main>
+
+
+
+
+<!-- Footer page -->
+
+<footer>
+    <nav>
+        <ul>
+            <li id="firstt">
+                <a href="">
+                    <img src="../images/header-footer images/white_books.png" alt="logo" title="Bookstore">
+                    <div class="header_logo_text">
+                        <p class="header_logo_text_first">
+                            library
+                        </p>
+                        <p class="header_logo_text_second">
+                            book store
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Popular
+                </span>
+                <span>Programming</span>
+                <span>Books for children</span>
+                <span>Pschology</span>
+                <span>Business</span>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Cash
+                </span>
+                <span>Delivery</span>
+                <span>Payment</span>
+                <span>About the store</span>
+            </li>
+
+            <li>
+                <span class="list_first_description">
+                    Help
+                </span>
+                <span>Contacts</span>
+                <span>Purchase returns</span>
+                <span>Buyer help</span>
+            </li>
+
+            <li class="requestCall">
+                <p>
+                    (+994) 70 540 56 24
+                </p>
+                <a href="tel:+994705405624" id="requestCallButton">
+                    Request a call
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <small>
+        All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+    </small>
+
+
+    <div class="absolute">
+        <div class="absolute_up">
+            <a href="">
+                <img src="../images/header-footer images/white_books.png" alt="">
+                <div class="absolute_logo_text">
+                    <p class="absolute_logo_text_first">
+                        library
+                    </p>
+                    <p class="absolute_logo_text_second">
+                        book store
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="absolute_middle">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Catalog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Contact us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="absolute_low">
+            <p>
+                Library Bookstore EACamp © 2003-2021
+            </p>
+        </div>
+    </div>
+</footer>
+
+<section id="chatSection">
+    <button class="open-button">Chat<i class="fas fa-comment "></i></button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="" class="form-container">
+        <h1>Chat <i class="fas fa-comment"></i></h1>
+        <div id="allMessages"></div>
+        <input type="text" placeholder="Type message.." name="msg" required id="messageContent">
+
+        <button type="submit" id="sendMessageToChat" class="btn">Send</button>
+        <button type="button" class="btn cancel">Close</button>
+        </form>
+    </div>
+</section>
+
+<section id="sponsorSection">
+    <span class="sponsorsText">Sponsors</span>
+</section>
+
+<div id="sponsors">
+    <div id="sponsorsList">
+        <ul>
+
+            <li>
+                <a href="https://www.google.com/">
+                    <img src="../images/index/google.png" alt="">
+                    <span>Google</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.netflix.com/az-ru/">
+                    <img src="../images/index/netflix.png" alt="">
+                    <span>Netflix</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.amazon.com/">
+                    <img src="../images/index/amazon.png" alt="">
+                    <span>Amazon</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <button id="closeButton">Close</button>
+</div>
+
+
+<script src="../javascripts/sponsor.js"></script>
+<script src="../javascripts/chatBox.js" type="module" defer></script>
+<script src="../javascripts/joinUs.js" type="module"></script>
+<script src="../javascripts/getUserName.js" type="module"></script>
+<script src="../javascripts/blockInspect.js"></script>
+    
+</body>
+</html>

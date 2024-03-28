@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="../images/header-footer images/white_books.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/catalogPage.css">
+
+  <title>Catalog Page</title>
+</head>
+
+<body>
+
+ <!-- Creating header -->
+ <header class="header">
+  <nav>
+      <ul>
+          <!-- First li with logo and text -->
+          <li id="first">
+              <a href="">
+                  <img src="../images/header-footer images/header_logo.png" alt="logo" title="Bookstore">
+                  <div class="header_logo_text">
+                      <p class="header_logo_text_first">
+                          library
+                      </p>
+                      <p class="header_logo_text_second">
+                          book store
+                      </p>
+                  </div>
+              </a>
+          </li>
+          <!-- First li with logo and text -->
+          
+          <!-- List with links 
+          It should be in center so i made  its with 50% and it putted automatically-->
+          <li class="second_list" id="links">
+              <ul>
+                  <li>
+                      <a href="../../index.html">Home</a>
+                  </li>
+                  
+                  <li>
+                      <a href="catalogPage.html">Catalog</a>
+                  </li>
+                  
+                  <li>
+                      <a href="./aboutSote.html">About Store</a>
+                  </li>
+                  
+                  <li>
+                      <a href="./contactUs.html">Contact Us</a>
+                  </li>
+                  
+                  <li>
+                      <a href="./searchPage.html">Search</a>
+                  </li>
+              </ul>
+              <img id="image_nav" src="../images/header-footer images/header_logo.png" alt="">
+          </li>
+          <!-- List with links -->
+
+          <!-- List with logo and join -->
+          <li id="joinUsName">
+              <img id="join_us" src="../images/header-footer images/header_person_icon.png" alt="join" title="join">
+              <p id="join_us_p">
+                  Join us
+              </p>
+              <div id="hamburger" class="hamburger">
+                  <span class="span_ham"></span>
+                  <span class="span_ham"></span>
+                  <span class="span_ham"></span>
+              </div>
+          </li>
+          <!-- End of list with logo -->
+      </ul>
+  </nav>
+</header>
+<!-- Header is done -->
+
+<!-- Join_us section will be absolute for cover all page -->
+<section id="join_us_panel" class="join_us">
+<div class="exit">
+  <img src="../images/header-footer images/exit_image.png" alt="exit" title="exit">
+</div>
+<form>
+  <p class="join_text">
+      Join Us
+  </p>
+  <input type="text" name="fullName" id="fullname" placeholder="Full name">
+  <input type="email" name="email" id="email" placeholder="Email">
+  <button id="join_button" type="submit">Join</button>
+</form>
+</section>
+<!-- End of join us -->
+
+
+
+<!-- Section with Swipers -->
+    <section class="swipper_page sec_1">
+      <!-- Swiper with all Books -->
+      <div class="container">
+        <div class="top_catalog">
+          <h2 class="catalog_title"> All Books</h2>
+          <ul class="catalog_categories" id="catalog_categories">
+            <!-- Here will be categories from js -->
+          </ul>
+        </div>
+        <div class="swiper swiper_catalog">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="all_swiper_books">
+            <!-- Slides -->
+            <img class="snipp" src="../images/index/snipp.gif" alt="">
+          </div>
+          <!-- Nav buttons -->
+          <div class="all_swiper-button-prev swiper-button-prev">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 1L1 21.5L22 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <div class="all_swiper-button-next swiper-button-next">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L22 21.5L1 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <!-- Nav buttons -->      
+        </div>
+      </div>
+
+      <!-- Swiper with SELECTED Books -->
+      <div class="container">
+        <div class="top_catalog" id="category_swiper">
+          <h2 class="catalog_title" style="width: 100%; display: flex; justify-content: center;
+          align-items: center;">Best Seller</h2>
+        </div>
+        <div class="swiper selected_swiper_catalog">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="selected_swiper_books">
+            <!-- Slides -->
+            <img class="snipp" src="../images/index/snipp.gif" alt="">
+          </div>
+          <!-- Nav buttons -->
+          <div class="selected_swiper-button-prev swiper-button-prev">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 1L1 21.5L22 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <div class="selected_swiper-button-next swiper-button-next">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L22 21.5L1 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <!-- Nav buttons -->      
+        </div>
+      </div>
+      
+      <!-- Swiper with NEW Books -->
+      <div class="container">
+        <div class="top_catalog">
+          <h2 class="catalog_title" style="width: 100%; display: flex; justify-content: center;
+          align-items: center;">New Releases</h2>
+        </div>
+        <div class="swiper new_swiper_catalog">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="new_swiper_books">
+            <!-- Slides -->
+            <img class="snipp" src="../images/index/snipp.gif" alt="">
+          </div>
+          <!-- Nav buttons -->
+          <div class="new_swiper-button-prev swiper-button-prev">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 1L1 21.5L22 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <div class="new_swiper-button-next swiper-button-next">
+            <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L22 21.5L1 42" stroke="#720418"/>
+            </svg>
+          </div>
+          <!-- Nav buttons -->      
+        </div>
+      </div>
+
+
+    </section>
+<!-- Section with Swipers -->
+
+
+
+<!-- Footer page -->
+<footer>
+  <nav>
+      <ul>
+          <li id="firstt">
+              <a href="">
+                  <img src="../images/header-footer images/white_books.png" alt="logo" title="Bookstore">
+                  <div class="header_logo_text">
+                      <p class="header_logo_text_first">
+                          library
+                      </p>
+                      <p class="header_logo_text_second">
+                          book store
+                      </p>
+                  </div>
+              </a>
+          </li>
+
+          <li>
+              <span class="list_first_description">
+                  Popular
+              </span>
+              <span>Programming</span>
+              <span>Books for children</span>
+              <span>Pschology</span>
+              <span>Business</span>
+          </li>
+
+          <li>
+              <span class="list_first_description">
+                  Cash
+              </span>
+              <span>Delivery</span>
+              <span>Payment</span>
+              <span>About the store</span>
+          </li>
+
+          <li>
+              <span class="list_first_description">
+                  Help
+              </span>
+              <span>Contacts</span>
+              <span>Purchase returns</span>
+              <span>Buyer help</span>
+          </li>
+
+          <li class="requestCall">
+            <p>
+                (+994) 70 540 56 24
+            </p>
+            <a href="tel:+994705405624" id="requestCallButton">
+                Request a call
+            </a>
+        </li>
+      </ul>
+  </nav>
+
+  <small>
+      All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+  </small>
+
+
+  <div class="absolute">
+      <div class="absolute_up">
+          <a href="">
+              <img src="../images/header-footer images/white_books.png" alt="">
+              <div class="absolute_logo_text">
+                  <p class="absolute_logo_text_first">
+                      library
+                  </p>
+                  <p class="absolute_logo_text_second">
+                      book store
+                  </p>
+              </div>
+          </a>
+      </div>
+
+      <div class="absolute_middle">
+          <div class="nav">
+              <ul>
+                  <li>
+                      <a href="">
+                          Home
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          Catalog
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          About
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          Contact us
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          Search
+                      </a>
+                  </li>
+
+                  
+              </ul>
+          </div>
+      </div>
+
+      <div class="absolute_low">
+          <p>
+              Library Bookstore EACamp © 2003-2021
+          </p>
+      </div>
+  </div>
+
+
+ 
+</footer>
+<!-- End of footer -->
+
+
+
+<section id="chatSection">
+  <button class="open-button">Chat<i class="fas fa-comment "></i></button>
+
+  <div class="chat-popup" id="myForm">
+      <form action="" class="form-container">
+      <h1>Chat <i class="fas fa-comment"></i></h1>
+      <div id="allMessages"></div>
+      <input type="text" placeholder="Type message.." name="msg" required id="messageContent">
+
+      <button type="submit" id="sendMessageToChat" class="btn">Send</button>
+      <button type="button" class="btn cancel">Close</button>
+      </form>
+  </div>
+</section>
+
+
+<section id="sponsorSection">
+  <span class="sponsorsText">Sponsors</span>
+</section>
+
+<div id="sponsors">
+  <div id="sponsorsList">
+      <ul>
+
+        <li>
+          <a href="https://www.google.com/">
+                <img src="../images/index/google.png" alt="">
+                <span>Google</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netflix.com/az-ru/">
+                <img src="../images/index/netflix.png" alt="">
+                <span>Netflix</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.amazon.com/">
+                <img src="../images/index/amazon.png" alt="">
+                <span>Amazon</span>
+            </a>
+        </li>
+
+      </ul>
+  </div>
+  <button id="closeButton">Close</button>
+</div>
+
+  <script src="../javascripts/sponsor.js"></script>
+  <script src="../javascripts/chatBox.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../javascripts/catalogPage.js" type="module"></script>
+  <script src="../javascripts/joinUs.js" type="module"></script>
+  <script src="../javascripts/getUserName.js" type="module"></script>
+  <script src="../javascripts/blockInspect.js"></script>
+  
+</body>
+
+</html>

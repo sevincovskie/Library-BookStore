@@ -1,0 +1,20 @@
+:root{
+    /* text colors */
+    --black_text: #241400;
+    --white_text: #fff;
+    --orange_text: #E16A00;
+    --red_text: #720418;
+    --gray_placeholder: #797667;
+    --gray_text: #cecece;
+    --comment_text: #232323;
+
+
+    /* Backgrounds */
+    --body_background: #FFFAF5;
+    --orange_background: #E16A00;
+    --footer_background: #391F00;
+    --red_background: #720418;
+    --white_background: #fff;
+    --gray_background: #797667;
+
+}
